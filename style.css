@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* HEADER */
+
+.header-container {
+    height: 90px;
+    background-color: #FF7175;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nome {
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+.fa-scale-balanced {
+    font-size: 20px;
+}
+
+.links-texto, .redes-sociais {
+    display: none;
+}
+
+.nome-raphael {
+    color: #fff;
+    font-size: 25px;
+    margin-left: 10px;
+
+}
+
+.subtitulo {
+    color: #000;
+    font-size: 16px;
+    margin-left: 25%;
+}
+
+
+
+
+@media (min-width:768px) {
+    .fa-scale-balanced {
+        font-size: 30px;
+        margin-left: 30px;
+    }
+    
+    .nome-raphael {
+        font-size: 35px;
+        margin-left: 10px;
+    
+    }
+    
+    .subtitulo {
+        font-size: 20px;
+    }
+    
+    .header-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nome {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .redes-sociais {
+        margin-left: 25%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .fa-brands {
+        color: black;
+        font-size: 35px;
+        transition: 0.8s;
+    }
+
+    
+
+}
+
+ 
+@media (min-width:1280px) {
+    .nome {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .navegacao-cabecalho {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    } 
+    
+    .links-texto {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .redes-sociais {
+        margin-left: 0;
+    }
+    
+    .itens-header {
+        color: black;
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+    .itens-header:hover {
+        color: #9C2222;
+    }
+
+    .fa-facebook:hover {
+        color: blue;
+        transform: scale(1.10);
+    }
+
+    .fa-instagram:hover {
+        color: #833AB4;
+        transform: scale(1.10);
+    }
+
+    .fa-youtube:hover {
+        color: #ff0000;
+        transform: scale(1.10);
+    }
+    
+}
